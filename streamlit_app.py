@@ -5,8 +5,6 @@ import requests
 import snowflake.connector
 from urllib.error import URLError
 
-streamlit.stop()
-
 streamlit.title('my parents new healthy dinner')
 
 streamlit.header('Breakfast Menu')
