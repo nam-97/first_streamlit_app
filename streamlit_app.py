@@ -37,6 +37,7 @@ try:
     #back_from_function = get_fruityvice_data(fruit_choice)
     fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
     fruityvice_normalize = pandas.json_normalize(fruityvice_response.json())
+    back_from_function = fruityvice_normalize
     streamlit.dataframe(back_from_function)
 
 except URLError as e:
